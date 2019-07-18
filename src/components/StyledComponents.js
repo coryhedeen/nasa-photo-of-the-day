@@ -8,7 +8,7 @@ export const Sun = styled.img`
 export const Explain = styled.p`
   width: 50%;
   text-align: justify;
-  margin-left: 250px;
+  margin-left: 135px;
   font-family: 'Literata', serif;
 `;
 
