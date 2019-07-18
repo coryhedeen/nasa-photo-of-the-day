@@ -1,9 +1,10 @@
 import React from 'react';
+import { Header } from './StyledComponents';
 
 function Title(props){
   return(
     <div className="title">
-      <h2>{props.title.title}</h2>
+      <Header>{props.title.title}</Header>
     </div>
   )
 }

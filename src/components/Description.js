@@ -1,9 +1,10 @@
 import React from 'react';
+import { Explain } from './StyledComponents';
 
 function Description(props){
   return(
     <div className="description">
-      <p>{props.des.explanation}</p>
+      <Explain>{props.des.explanation}</Explain>
     </div>
   )
 }

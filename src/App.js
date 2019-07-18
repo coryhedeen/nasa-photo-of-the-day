@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from 'axios';
-import Image from './components/Image';
-import Title from './components/Title';
-import Description from './components/Description';
+import CardContainer from './components/CardContainer';
+
+
 function App() {
 const [photo, setPhoto] = useState([]);
 
@@ -15,14 +15,9 @@ useEffect(() => {
       .catch(err => console.log(err))
 }, [])
 
-
   return (
     <div className="App">
-      <p>
-        <Title title={photo}/>
-        <Image image={photo}/>
-        <Description des={photo} />
-      </p>
+      <CardContainer data={photo} />
     </div>
   );
 }
